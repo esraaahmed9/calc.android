@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="28dp"
+        android:background="#8C4B0000"
+        android:text="@string/minus"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/times" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:background="#8C4B0000"
+        android:text="@string/plus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divided" />
+
+    <Button
+        android:id="@+id/times"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="28dp"
+        android:background="#8C4B0000"
+        android:text="@string/times"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <Button
+        android:id="@+id/divided"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="38dp"
+        android:background="#8C4B0000"
+        android:text="@string/divided"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="28dp"
+        android:background="#8C4B0000"
+        android:text="@string/AC"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <EditText
+        android:id="@+id/insert1"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="31dp"
+        android:background="#DCD8D8"
+        android:ems="10"
+        android:hint="@string/insert1"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#C61B1B"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="no" />
+
+    <EditText
+        android:id="@+id/insert2"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="31dp"
+        android:background="#DCD8D8"
+        android:ems="10"
+        android:hint="@string/insert2"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#C61B1B"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="no" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="31dp"
+        android:background="#DCD8D8"
+        android:hint="@string/value"
+        android:shadowColor="#090808"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:drawableTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
