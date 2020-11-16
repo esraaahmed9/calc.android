@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText insert1;
     EditText insert2;
     TextView value;
-    Button times, plus, minus, divided, AC;
+    Button times, plus, minus, divided, AC, pwr2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         minus =  findViewById(R.id.minus);
         AC =  findViewById(R.id.AC);
         value =  findViewById(R.id.value);
+        pwr2 = findViewById(R.id.power2);
+
 
        divided.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,6 +125,26 @@ public class MainActivity extends AppCompatActivity {
                 value.setText(valuee);
             }
         });
+        pwr2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                if ((insert1.getText().toString().equals("")) || (insert2.getText().toString().equals(""))) {
+                    insert1.setError("please enter the first value");
+                    insert1.setFocusable(true);
+                    insert2.setError("Please enter the second value");
+                    insert2.setFocusable(true);}
+                else {
+                    final double ins1;
+                    final double ins2;
+                    final double valuee;
+                    ins1 = Double.parseDouble(insert1.getText().toString());
+                    ins2 = Double.parseDouble(insert2.getText().toString());
+                    valuee = ins1*2 + ins2*2;
+                    value.setText(String.valueOf(valuee));
+                }
+            }
+        });
+
 
     }
 }

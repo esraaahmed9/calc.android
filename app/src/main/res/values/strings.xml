@@ -9,4 +9,6 @@
     <string name="value">value</string>
     <string name="calculator">calculator</string>
     <string name="insert1">Enter The First Number</string>
+    <string name="power2">X^2</string>
+    <string name="negative">( _ )</string>
 </resources>
